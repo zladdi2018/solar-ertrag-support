@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – SolarErtrag</title>
+<style>
+  :root { --red:#c81017; --red-dark:#7a0508; --gold:#f4c025; --ink:#1b1b1b; --muted:#6b6b6b; --bg:#f7f5f2; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 22px 60px; }
+  header { display:flex; align-items:center; gap:14px; padding:12px 0 22px; }
+  img { width:56px; height:56px; border-radius:14px; box-shadow:0 6px 16px rgba(122,5,8,.18); }
+  h1 { margin:0; font-size:26px; letter-spacing:-.02em; }
+  .sub { margin:2px 0 0; color:var(--muted); font-size:13px; }
+  .card { background:#fff; border:1px solid rgba(0,0,0,.06); border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.04); }
+  h2 { margin:22px 0 8px; font-size:17px; }
+  h2:first-child { margin-top:0; }
+  p, li { font-size:15px; }
+  code { background:#f3eee8; padding:1px 5px; border-radius:5px; font-size:13px; }
+  a { color:var(--red); }
+  .back { display:inline-block; margin-top:22px; text-decoration:none; color:var(--red); font-weight:600; }
+  footer { text-align:center; color:var(--muted); font-size:12px; margin-top:26px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="SolarErtrag">
+    <div>
+      <h1>Support</h1>
+      <p class="sub">SolarErtrag · Kompatibel mit Growatt</p>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2>Kontakt</h2>
+    <p>E-Mail: <a href="mailto:znikolov@pirok.net">znikolov@pirok.net</a></p>
+
+    <h2>Woher bekomme ich den Growatt API-Token?</h2>
+    <p>In der <strong>ShinePhone</strong>-App unter <em>Ich → API-Token</em> oder auf <a href="https://openapi.growatt.com">openapi.growatt.com</a> unter <em>Account Management → API Token</em>.</p>
+
+    <h2>Wo finde ich die Anlagen-ID?</h2>
+    <p>Die Anlagen-ID ist die numerische Plant-ID deiner Anlage. Nach dem Verbinden lädt SolarErtrag die Anlagen automatisch und bietet sie als Auswahlfeld in den Einstellungen und im Kopfbereich der Übersicht an.</p>
+
+    <h2>Die App zeigt keine Daten – was tun?</h2>
+    <ul>
+      <li>Token, Anlagen-ID und Region in den Einstellungen prüfen.</li>
+      <li>Auf <strong>Verbindung testen</strong> tippen.</li>
+      <li>Growatt begrenzt häufige Abfragen. Bei „Zu viele Anfragen“ einige Minuten warten; die App zeigt zwischenzeitlich die zuletzt geladenen Daten.</li>
+      <li>Internetverbindung prüfen.</li>
+    </ul>
+
+    <h2>Warum aktualisiert sich die Leistung nur alle fünf Minuten?</h2>
+    <p>Growatt stellt die Daten in einem Rhythmus von etwa fünf Minuten bereit. Häufigere Abfragen würden vom Growatt-Server gedrosselt.</p>
+
+    <h2>Wie wechsle ich die Anlage?</h2>
+    <p>In den Einstellungen unter <em>Anlage</em> oder direkt über den Anlagennamen im Kopfbereich der Übersicht. Die Liste wird automatisch aus deinem Growatt-Konto geladen.</p>
+
+    <h2>Wie funktioniert der Demo-Modus?</h2>
+    <p>In den Einstellungen den Demo-Modus aktivieren. Die App zeigt dann realistische Beispieldaten, ohne dass Zugangsdaten nötig sind.</p>
+
+    <h2>Warum erhalte ich die Erinnerung mehrfach?</h2>
+    <p>Die tägliche Zusammenfassung kann abends bis zu dreimal erscheinen (20:00, 20:20 und 20:40 Uhr). Danach bleibt es für diesen Tag ruhig. Die Funktion lässt sich in den Einstellungen unter <em>Mitteilungen</em> deaktivieren.</p>
+
+    <h2>Ist SolarErtrag eine offizielle Growatt-App?</h2>
+    <p>Nein. SolarErtrag ist eine unabhängige App, die mit Growatt-Wechselrichtern kompatibel ist, aber nicht von Growatt stammt und nicht mit Growatt verbunden ist.</p>
+
+    <h2>Wo werden meine Daten gespeichert?</h2>
+    <p>Der API-Token wird nur lokal im iOS-Keychain gespeichert. Die Ertragsdaten werden direkt bei der Growatt OpenAPI abgerufen. Es gibt keinen Server des App-Anbieters. Details stehen in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+  </div>
+
+  <a class="back" href="index.html">← Zurück</a>
+  <footer>© 2026 SolarErtrag · Nicht mit Growatt verbunden</footer>
+</div>
+</body>
+</html>

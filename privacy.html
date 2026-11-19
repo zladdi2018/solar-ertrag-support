@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz – SolarErtrag</title>
+<style>
+  :root { --red:#c81017; --red-dark:#7a0508; --gold:#f4c025; --ink:#1b1b1b; --muted:#6b6b6b; --bg:#f7f5f2; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+  .wrap { max-width:760px; margin:0 auto; padding:28px 22px 60px; }
+  header { display:flex; align-items:center; gap:14px; padding:12px 0 22px; }
+  img { width:56px; height:56px; border-radius:14px; box-shadow:0 6px 16px rgba(122,5,8,.18); }
+  h1 { margin:0; font-size:26px; letter-spacing:-.02em; }
+  .sub { margin:2px 0 0; color:var(--muted); font-size:13px; }
+  .card { background:#fff; border:1px solid rgba(0,0,0,.06); border-radius:20px; padding:22px; box-shadow:0 8px 24px rgba(0,0,0,.04); }
+  h2 { margin:24px 0 8px; font-size:18px; }
+  h2:first-child { margin-top:0; }
+  p, li { font-size:15px; }
+  .muted { color:var(--muted); font-size:13px; }
+  a { color:var(--red); }
+  .back { display:inline-block; margin-top:22px; text-decoration:none; color:var(--red); font-weight:600; }
+  footer { text-align:center; color:var(--muted); font-size:12px; margin-top:26px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="SolarErtrag">
+    <div>
+      <h1>Datenschutzerklärung</h1>
+      <p class="sub">SolarErtrag · Stand: 19. November 2026</p>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2>Verantwortlicher</h2>
+    <p>Zlatko Nikolov<br>
+    E-Mail: <a href="mailto:znikolov@pirok.net">znikolov@pirok.net</a></p>
+
+    <h2>Worum es geht</h2>
+    <p>SolarErtrag ist eine unabhängige iOS-App, die Erträge und die aktuelle Leistung von Photovoltaikanlagen anzeigt. Die App ist <strong>kompatibel mit Growatt-Wechselrichtern</strong>, aber <strong>keine offizielle App der Growatt New Energy Technology Co., Ltd.</strong> und steht in keiner Verbindung zu Growatt.</p>
+
+    <h2>Welche Daten verarbeitet werden</h2>
+    <p><strong>Lokal auf deinem Gerät gespeichert:</strong></p>
+    <ul>
+      <li>Growatt API-Token (im iOS-Keychain)</li>
+      <li>Anlagen-ID, ausgewählte Anlage und App-Einstellungen</li>
+      <li>Zuletzt geladene Ertragsdaten (lokaler Cache)</li>
+      <li>Sprache und Design-Einstellungen</li>
+    </ul>
+    <p><strong>An Growatt übermittelt:</strong> Wenn du die App mit deinem Growatt-Konto verbindest, sendet die App deinen API-Token und deine Anlagen-ID direkt an die Growatt OpenAPI (<code>openapi.growatt.com</code> bzw. die von dir gewählte Region), um deine Anlagendaten abzurufen. Es gibt <strong>keinen Server des App-Anbieters</strong>: Die Daten werden nicht an den Entwickler oder an Dritte weitergegeben. Für die Verarbeitung durch Growatt gelten die Datenschutzbestimmungen von Growatt.</p>
+    <p><strong>Benachrichtigungen:</strong> Die tägliche Erinnerung wird ausschließlich lokal auf dem Gerät geplant. Es wird kein Push-Server verwendet.</p>
+    <p><strong>Nicht verwendet:</strong> keine Analyse- oder Tracking-SDKs, keine Werbung, keine Nutzungsprofile, keine Weitergabe oder kein Verkauf von Daten.</p>
+
+    <h2>Speicherdauer und Löschung</h2>
+    <p>Token und Einstellungen bleiben so lange auf deinem Gerät, bis du sie löschst. Du kannst den Token jederzeit in den App-Einstellungen leeren; dabei wird er aus dem Keychain entfernt. Beim Löschen der App werden die App-Daten entfernt. Ein eventuell im Keychain verbleibender Eintrag lässt sich durch erneutes Öffnen und Leeren des Tokenfelds entfernen.</p>
+
+    <h2>Deine Rechte</h2>
+    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch. Da der Anbieter selbst keine personenbezogenen Daten speichert, betreffen diese Rechte in der Regel nur die lokalen Daten auf deinem Gerät. Bei Fragen wende dich an die oben genannte E-Mail-Adresse.</p>
+
+    <h2>Kinder</h2>
+    <p>Die App richtet sich nicht an Kinder unter 13 Jahren.</p>
+
+    <h2>Änderungen</h2>
+    <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich die App oder rechtliche Anforderungen ändern. Die aktuelle Fassung ist stets unter dieser URL verfügbar.</p>
+
+    <h2>English summary</h2>
+    <p class="muted">SolarErtrag is an unofficial iOS app that displays solar yield data. Your Growatt API token and plant ID are stored locally on your device (token in the iOS Keychain) and are sent directly to Growatt's OpenAPI to retrieve your data. The developer operates no server, uses no analytics or tracking, and does not collect or share personal data. You can remove the token at any time in the app settings.</p>
+  </div>
+
+  <a class="back" href="index.html">← Zurück</a>
+  <footer>© 2026 SolarErtrag · Nicht mit Growatt verbunden</footer>
+</div>
+</body>
+</html>
