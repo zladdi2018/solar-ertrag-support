@@ -40,6 +40,15 @@
     <h2>Woher bekomme ich den Growatt API-Token?</h2>
     <p>In der <strong>ShinePhone</strong>-App unter <em>Ich → API-Token</em> oder auf <a href="https://openapi.growatt.com">openapi.growatt.com</a> unter <em>Account Management → API Token</em>.</p>
 
+    <h2>Wie verbinde ich einen Deye-Wechselrichter?</h2>
+    <ol>
+      <li>Auf <a href="https://developer.deyecloud.com">developer.deyecloud.com</a> mit dem DeyeCloud-Konto anmelden und eine kostenlose Anwendung anlegen.</li>
+      <li>App ID und App Secret notieren.</li>
+      <li>In der App unter <em>Einstellungen → Plattform → Deye</em> App ID, App Secret, E-Mail und Passwort des DeyeCloud-Kontos sowie die passende Region eintragen.</li>
+      <li>Auf <em>Anlagen laden</em> tippen, die Station auswählen und <em>Verbindung testen</em>.</li>
+    </ol>
+    <p>App Secret und Passwort werden nur im iOS-Keychain gespeichert. Der Zugangstoken ist etwa 60 Tage gültig und wird automatisch erneuert.</p>
+
     <h2>Wo finde ich die Anlagen-ID?</h2>
     <p>Die Anlagen-ID ist die numerische Plant-ID deiner Anlage. Nach dem Verbinden lädt SolarErtrag die Anlagen automatisch und bietet sie als Auswahlfeld in den Einstellungen und im Kopfbereich der Übersicht an.</p>
 
@@ -75,8 +84,10 @@
     In the ShinePhone app under <em>Me → API Token</em>, or at <a href="https://openapi.growatt.com">openapi.growatt.com</a> under <em>Account Management → API Token</em>.</p>
     <p><strong>The app shows no data.</strong><br>
     Check the token, plant ID and region in Settings and tap <em>Test connection</em>. Growatt limits frequent requests; if you see “Too many requests”, wait a few minutes. The app keeps showing the last loaded data.</p>
-    <p><strong>Is SolarErtrag an official Growatt app?</strong><br>
-    No. SolarYield/SolarErtrag is an independent app compatible with Growatt inverters and is not affiliated with Growatt.</p>
+    <p><strong>How do I connect a Deye inverter?</strong><br>
+    Create a free application at developer.deyecloud.com, then enter the App ID, App Secret, DeyeCloud email/password and region under <em>Settings → Platform → Deye</em>. Load the plants, select your station and test the connection.</p>
+    <p><strong>Is SolarErtrag an official Growatt or Deye app?</strong><br>
+    No. SolarYield/SolarErtrag is an independent app compatible with Growatt and Deye inverters and is not affiliated with either manufacturer.</p>
   </div>
 
   <a class="back" href="index.html">← Zurück</a>
