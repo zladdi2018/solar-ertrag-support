@@ -51,6 +51,7 @@
     </ul>
     <p><strong>An Growatt übermittelt:</strong> Wenn du die App mit deinem Growatt-Konto verbindest, sendet die App deinen API-Token und deine Anlagen-ID direkt an die Growatt OpenAPI (<code>openapi.growatt.com</code> bzw. die von dir gewählte Region), um deine Anlagendaten abzurufen. Es gibt <strong>keinen Server des App-Anbieters</strong>: Die Daten werden nicht an den Entwickler oder an Dritte weitergegeben. Für die Verarbeitung durch Growatt gelten die Datenschutzbestimmungen von Growatt.</p>
     <p><strong>An DeyeCloud übermittelt:</strong> Wenn du die App mit deinem DeyeCloud-Konto verbindest, speichert die App App ID, App Secret, E-Mail-Adresse und Passwort lokal (App Secret und Passwort im iOS-Keychain) und sendet sie direkt an die DeyeCloud OpenAPI (z. B. <code>eu1-developer.deyecloud.com</code>), um Stationen und Ertragsdaten abzurufen. Das Passwort wird als SHA-256-Hash übertragen. Auch hier gibt es keinen Server des App-Anbieters.</p>
+    <p><strong>An die Anker Power Cloud übermittelt:</strong> Wenn du die App mit deinem Anker-SOLIX-Konto verbindest, speichert die App E-Mail-Adresse und Passwort lokal (Passwort im iOS-Keychain) und sendet sie direkt an die Anker Power Cloud (<code>ankerpower-api-eu.anker.com</code> bzw. <code>ankerpower-api.anker.com</code>), um Anlagen-, Batterie- und Energiedaten abzurufen. Das Passwort wird mit dem öffentlichen Schlüssel des Anker-Servers verschlüsselt übertragen. Auch hier gibt es keinen Server des App-Anbieters.</p>
     <p><strong>Benachrichtigungen:</strong> Die tägliche Erinnerung wird ausschließlich lokal auf dem Gerät geplant. Es wird kein Push-Server verwendet.</p>
     <p><strong>Nicht verwendet:</strong> keine Analyse- oder Tracking-SDKs, keine Werbung, keine Nutzungsprofile, keine Weitergabe oder kein Verkauf von Daten.</p>
 
@@ -67,7 +68,7 @@
     <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich die App oder rechtliche Anforderungen ändern. Die aktuelle Fassung ist stets unter dieser URL verfügbar.</p>
 
     <h2>English summary</h2>
-    <p class="muted">SolarErtrag is an unofficial iOS app that displays solar yield data. Your Growatt API token and plant ID, or your DeyeCloud App ID, App Secret, email and password, are stored locally on your device (secrets in the iOS Keychain) and are sent directly to the respective cloud API to retrieve your data. The developer operates no server, uses no analytics or tracking, and does not collect or share personal data. You can remove the credentials at any time in the app settings.</p>
+    <p class="muted">SolarErtrag is an unofficial iOS app that displays solar yield data. Your Growatt API token and plant ID, or your DeyeCloud/Anker SOLIX credentials, are stored locally on your device (secrets in the iOS Keychain) and are sent directly to the respective cloud API to retrieve your data. The developer operates no server, uses no analytics or tracking, and does not collect or share personal data. You can remove the credentials at any time in the app settings.</p>
   </div>
 
   <a class="back" href="index.html">← Zurück</a>

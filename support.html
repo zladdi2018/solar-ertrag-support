@@ -49,6 +49,13 @@
     </ol>
     <p>App Secret und Passwort werden nur im iOS-Keychain gespeichert. Der Zugangstoken ist etwa 60 Tage gültig und wird automatisch erneuert.</p>
 
+    <h2>Wie verbinde ich eine Anker SOLIX Anlage?</h2>
+    <ol>
+      <li>In der App unter <em>Einstellungen → Plattform → Anker SOLIX</em> E-Mail und Passwort des Anker-Kontos, die Region (EU oder COM) und das Land als ISO-Code (z. B. <code>DE</code>) eintragen.</li>
+      <li>Auf <em>Anlagen laden</em> tippen, die Anlage auswählen und <em>Verbindung testen</em>.</li>
+    </ol>
+    <p>Anker erlaubt pro Konto nur <strong>eine aktive Sitzung</strong>. Meldet sich SolarErtrag an, wird die Anker-App ausgeloggt – und umgekehrt. Am besten ein zweites Anker-Mitgliedskonto anlegen, dieses mit der Anlage teilen und nur in SolarErtrag nutzen. Das Passwort liegt ausschließlich im iOS-Keychain.</p>
+
     <h2>Wo finde ich die Anlagen-ID?</h2>
     <p>Die Anlagen-ID ist die numerische Plant-ID deiner Anlage. Nach dem Verbinden lädt SolarErtrag die Anlagen automatisch und bietet sie als Auswahlfeld in den Einstellungen und im Kopfbereich der Übersicht an.</p>
 
@@ -84,10 +91,12 @@
     In the ShinePhone app under <em>Me → API Token</em>, or at <a href="https://openapi.growatt.com">openapi.growatt.com</a> under <em>Account Management → API Token</em>.</p>
     <p><strong>The app shows no data.</strong><br>
     Check the token, plant ID and region in Settings and tap <em>Test connection</em>. Growatt limits frequent requests; if you see “Too many requests”, wait a few minutes. The app keeps showing the last loaded data.</p>
+    <p><strong>How do I connect an Anker SOLIX system?</strong><br>
+    Open <em>Settings → Platform → Anker SOLIX</em> and enter your Anker email/password, region (EU or COM) and country. Load the plants, select your site and test the connection. Anker allows only one active session per account, so use a separate member account for this app if possible.</p>
     <p><strong>How do I connect a Deye inverter?</strong><br>
     Create a free application at developer.deyecloud.com, then enter the App ID, App Secret, DeyeCloud email/password and region under <em>Settings → Platform → Deye</em>. Load the plants, select your station and test the connection.</p>
     <p><strong>Is SolarErtrag an official Growatt or Deye app?</strong><br>
-    No. SolarYield/SolarErtrag is an independent app compatible with Growatt and Deye inverters and is not affiliated with either manufacturer.</p>
+    No. SolarYield/SolarErtrag is an independent app compatible with Growatt, Deye and Anker SOLIX systems and is not affiliated with any manufacturer.</p>
   </div>
 
   <a class="back" href="index.html">← Zurück</a>
