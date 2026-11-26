@@ -29,7 +29,7 @@
     <img src="icon.png" alt="SolarErtrag">
     <div>
       <h1>Support</h1>
-      <p class="sub">SolarErtrag · Kompatibel mit Growatt</p>
+      <p class="sub">SolarErtrag · Growatt · Deye · Anker · Zendure · EcoFlow</p>
     </div>
   </header>
 
@@ -63,8 +63,12 @@
     </ol>
     <p>Die Zendure-App bleibt parallel nutzbar. Live-Daten kommen per MQTT, die Erträge aus der Zendure-Cloud. Das Passwort liegt ausschließlich im iOS-Keychain.</p>
 
+    <h2>Wie verbinde ich EcoFlow STREAM?</h2>
+    <p>Im EcoFlow Developer Portal (<code>developer.ecoflow.com</code>) einen Access Key und Secret Key erzeugen. In der App unter <em>Einstellungen → Plattform → EcoFlow STREAM</em> beide Keys, die Region (EU oder Global) und die Geräte-Seriennummer eintragen und <em>Verbindung testen</em> antippen.</p>
+    <p>Die offizielle EcoFlow-API liefert nur Live-Leistung, keine Ertragshistorie. Geräte mit dem Serienpräfix <code>BK01</code> sind über die Developer-API nicht freigegeben; die App zeigt dann einen Hinweis.</p>
+
     <h2>Wo finde ich die Anlagen-ID?</h2>
-    <p>Die Anlagen-ID ist die numerische Plant-ID deiner Anlage. Nach dem Verbinden lädt SolarErtrag die Anlagen automatisch und bietet sie als Auswahlfeld in den Einstellungen und im Kopfbereich der Übersicht an.</p>
+    <p>Die Anlagen-ID ist die numerische Plant-ID deiner Anlage. Für die Anlagenliste genügt der API-Token: Token eingeben, <em>Anlagen laden</em> antippen und die gewünschte Anlage auswählen. Die Liste erscheint auch in den Einstellungen und im Kopfbereich der Übersicht.</p>
 
     <h2>Die App zeigt keine Daten – was tun?</h2>
     <ul>
@@ -86,11 +90,11 @@
     <h2>Warum erhalte ich die Erinnerung mehrfach?</h2>
     <p>Die tägliche Zusammenfassung kann abends bis zu dreimal erscheinen (20:00, 20:20 und 20:40 Uhr). Danach bleibt es für diesen Tag ruhig. Die Funktion lässt sich in den Einstellungen unter <em>Mitteilungen</em> deaktivieren.</p>
 
-    <h2>Ist SolarErtrag eine offizielle Growatt-App?</h2>
-    <p>Nein. SolarErtrag ist eine unabhängige App, die mit Growatt-Wechselrichtern kompatibel ist, aber nicht von Growatt stammt und nicht mit Growatt verbunden ist.</p>
+    <h2>Ist SolarErtrag eine offizielle Hersteller-App?</h2>
+    <p>Nein. SolarErtrag ist eine unabhängige App, die mit Growatt-, Deye-, Anker-SOLIX-, Zendure-SolarFlow- und EcoFlow-STREAM-Anlagen kompatibel ist, aber nicht von den Herstellern stammt und nicht mit ihnen verbunden ist.</p>
 
     <h2>Wo werden meine Daten gespeichert?</h2>
-    <p>Der API-Token wird nur lokal im iOS-Keychain gespeichert. Die Ertragsdaten werden direkt bei der Growatt OpenAPI abgerufen. Es gibt keinen Server des App-Anbieters. Details stehen in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+    <p>Zugangsdaten werden nur lokal im iOS-Keychain bzw. Android Keystore gespeichert. Die Daten werden direkt bei der Growatt OpenAPI, DeyeCloud, Anker Power Cloud, Zendure-Cloud bzw. EcoFlow IoT Open Platform abgerufen. Es gibt keinen Server des App-Anbieters. Details stehen in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
 
     <h2>English support</h2>
     <p>Contact: <a href="mailto:info@pirok.net">info@pirok.net</a></p>
@@ -104,12 +108,12 @@
     Open <em>Settings → Platform → Anker SOLIX</em> and enter your Anker email/password, region (EU or COM) and country. Load the plants, select your site and test the connection. Anker allows only one active session per account, so use a separate member account for this app if possible.</p>
     <p><strong>How do I connect a Deye inverter?</strong><br>
     Create a free application at developer.deyecloud.com, then enter the App ID, App Secret, DeyeCloud email/password and region under <em>Settings → Platform → Deye</em>. Load the plants, select your station and test the connection.</p>
-    <p><strong>Is SolarErtrag an official Growatt or Deye app?</strong><br>
-    No. SolarYield/SolarErtrag is an independent app compatible with Growatt, Deye and Anker SOLIX systems and is not affiliated with any manufacturer.</p>
+    <p><strong>Is SolarErtrag an official manufacturer app?</strong><br>
+    No. SolarErtrag is an independent app compatible with Growatt, Deye, Anker SOLIX, Zendure and EcoFlow STREAM systems and is not affiliated with any manufacturer.</p>
   </div>
 
   <a class="back" href="index.html">← Zurück</a>
-  <footer>© 2026 SolarErtrag · Nicht mit Growatt verbunden</footer>
+  <footer>© 2026 SolarErtrag · Nicht mit den Herstellern verbunden</footer>
 </div>
 </body>
 </html>

@@ -29,7 +29,7 @@
     <img src="icon.png" alt="SolarErtrag">
     <div>
       <h1>Datenschutzerklärung</h1>
-      <p class="sub">SolarErtrag · Stand: 19. November 2026</p>
+      <p class="sub">SolarErtrag · Stand: 26. November 2026</p>
     </div>
   </header>
 
@@ -39,41 +39,44 @@
     E-Mail: <a href="mailto:info@pirok.net">info@pirok.net</a></p>
 
     <h2>Worum es geht</h2>
-    <p>SolarErtrag ist eine unabhängige iOS-App, die Erträge und die aktuelle Leistung von Photovoltaikanlagen anzeigt. Die App ist <strong>kompatibel mit Growatt-Wechselrichtern</strong>, aber <strong>keine offizielle App der Growatt New Energy Technology Co., Ltd.</strong> und steht in keiner Verbindung zu Growatt.</p>
+    <p>SolarErtrag ist eine unabhängige App für iOS und Android, die Erträge und die aktuelle Leistung von Photovoltaikanlagen anzeigt. Sie ist mit <strong>Growatt, Deye, Anker SOLIX, Zendure SolarFlow und EcoFlow STREAM</strong> kompatibel, aber <strong>keine offizielle App der jeweiligen Hersteller</strong> und steht in keiner Verbindung zu ihnen.</p>
 
-    <h2>Welche Daten verarbeitet werden</h2>
-    <p><strong>Lokal auf deinem Gerät gespeichert:</strong></p>
+    <h2>Lokal gespeicherte Daten</h2>
     <ul>
-      <li>Growatt API-Token (im iOS-Keychain)</li>
-      <li>Anlagen-ID, ausgewählte Anlage und App-Einstellungen</li>
+      <li>API-Token bzw. Zugangsdaten der Anbieter (Secrets im iOS-Keychain bzw. Android Keystore)</li>
+      <li>Anlagen-, Stations- und Geräte-IDs sowie die ausgewählte Anlage</li>
       <li>Zuletzt geladene Ertragsdaten (lokaler Cache)</li>
-      <li>Sprache und Design-Einstellungen</li>
+      <li>Sprache und Darstellung</li>
     </ul>
-    <p><strong>An Growatt übermittelt:</strong> Wenn du die App mit deinem Growatt-Konto verbindest, sendet die App deinen API-Token und deine Anlagen-ID direkt an die Growatt OpenAPI (<code>openapi.growatt.com</code> bzw. die von dir gewählte Region), um deine Anlagendaten abzurufen. Es gibt <strong>keinen Server des App-Anbieters</strong>: Die Daten werden nicht an den Entwickler oder an Dritte weitergegeben. Für die Verarbeitung durch Growatt gelten die Datenschutzbestimmungen von Growatt.</p>
-    <p><strong>An DeyeCloud übermittelt:</strong> Wenn du die App mit deinem DeyeCloud-Konto verbindest, speichert die App App ID, App Secret, E-Mail-Adresse und Passwort lokal (App Secret und Passwort im iOS-Keychain) und sendet sie direkt an die DeyeCloud OpenAPI (z. B. <code>eu1-developer.deyecloud.com</code>), um Stationen und Ertragsdaten abzurufen. Das Passwort wird als SHA-256-Hash übertragen. Auch hier gibt es keinen Server des App-Anbieters.</p>
-    <p><strong>An die Zendure-Cloud übermittelt:</strong> Wenn du die App mit deinem Zendure-Konto verbindest, speichert die App E-Mail-Adresse und Passwort lokal (Passwort im iOS-Keychain) und sendet sie direkt an die Zendure-Cloud (<code>app.zendure.tech</code>), um Geräte-, Live- und Ertragsdaten abzurufen. Live-Daten werden über den Zendure-MQTT-Broker empfangen. Auch hier gibt es keinen Server des App-Anbieters.</p>
-    <p><strong>An die Anker Power Cloud übermittelt:</strong> Wenn du die App mit deinem Anker-SOLIX-Konto verbindest, speichert die App E-Mail-Adresse und Passwort lokal (Passwort im iOS-Keychain) und sendet sie direkt an die Anker Power Cloud (<code>ankerpower-api-eu.anker.com</code> bzw. <code>ankerpower-api.anker.com</code>), um Anlagen-, Batterie- und Energiedaten abzurufen. Das Passwort wird mit dem öffentlichen Schlüssel des Anker-Servers verschlüsselt übertragen. Auch hier gibt es keinen Server des App-Anbieters.</p>
-    <p><strong>Benachrichtigungen:</strong> Die tägliche Erinnerung wird ausschließlich lokal auf dem Gerät geplant. Es wird kein Push-Server verwendet.</p>
-    <p><strong>Nicht verwendet:</strong> keine Analyse- oder Tracking-SDKs, keine Werbung, keine Nutzungsprofile, keine Weitergabe oder kein Verkauf von Daten.</p>
+
+    <h2>Datenabruf bei den Herstellern</h2>
+    <p>Deine Zugangsdaten werden ausschließlich direkt an den Cloud-Dienst des gewählten Anbieters gesendet: Growatt OpenAPI (<code>openapi.growatt.com</code> oder die gewählte Region), DeyeCloud OpenAPI (z. B. <code>eu1-developer.deyecloud.com</code>), Anker Power Cloud (<code>ankerpower-api-eu.anker.com</code> bzw. <code>ankerpower-api.anker.com</code>), Zendure Cloud (<code>app.zendure.tech</code>, Live-Daten per MQTT) oder EcoFlow IoT Open Platform (<code>api.ecoflow.com</code> bzw. <code>api-e.ecoflow.com</code> für Europa).</p>
+    <p>Es gibt <strong>keinen Server des App-Anbieters</strong>: Die Daten werden nicht an den Entwickler oder an Dritte weitergegeben. Für die Verarbeitung durch die Hersteller gelten deren Datenschutzbestimmungen. EcoFlow stellt über die offizielle API keine Ertragshistorie bereit; die App zeigt für diesen Anbieter nur Live-Werte.</p>
+
+    <h2>Mitteilungen</h2>
+    <p>Die optionale tägliche Zusammenfassung wird ausschließlich lokal auf dem Gerät geplant. Es wird kein Push-Server verwendet.</p>
+
+    <h2>Keine Analyse, keine Werbung</h2>
+    <p>Die App verwendet keine Analyse- oder Tracking-SDKs, zeigt keine Werbung und erstellt keine Nutzungsprofile. Daten werden nicht verkauft oder weitergegeben.</p>
 
     <h2>Speicherdauer und Löschung</h2>
-    <p>Token und Einstellungen bleiben so lange auf deinem Gerät, bis du sie löschst. Du kannst den Token jederzeit in den App-Einstellungen leeren; dabei wird er aus dem Keychain entfernt. Beim Löschen der App werden die App-Daten entfernt. Ein eventuell im Keychain verbleibender Eintrag lässt sich durch erneutes Öffnen und Leeren des Tokenfelds entfernen.</p>
+    <p>Zugangsdaten und Einstellungen bleiben auf deinem Gerät, bis du sie entfernst oder die App löschst. Einzelne Felder kannst du jederzeit in den Einstellungen leeren. Beim Löschen der App werden die App-Daten entfernt.</p>
 
     <h2>Deine Rechte</h2>
-    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch. Da der Anbieter selbst keine personenbezogenen Daten speichert, betreffen diese Rechte in der Regel nur die lokalen Daten auf deinem Gerät. Bei Fragen wende dich an die oben genannte E-Mail-Adresse.</p>
+    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch. Da der Anbieter selbst keine personenbezogenen Daten auf eigenen Servern speichert, betreffen diese Rechte die lokalen Daten auf deinem Gerät. Bei Fragen wende dich an die oben genannte E-Mail-Adresse.</p>
 
     <h2>Kinder</h2>
     <p>Die App richtet sich nicht an Kinder unter 13 Jahren.</p>
 
     <h2>Änderungen</h2>
-    <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich die App oder rechtliche Anforderungen ändern. Die aktuelle Fassung ist stets unter dieser URL verfügbar.</p>
+    <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich die App oder rechtliche Anforderungen ändern. Die aktuelle Fassung ist direkt in der App unter Einstellungen → Datenschutz sowie unter dieser URL verfügbar.</p>
 
     <h2>English summary</h2>
-    <p class="muted">SolarErtrag is an unofficial iOS app that displays solar yield data. Your Growatt API token and plant ID, or your DeyeCloud/Anker SOLIX/Zendure credentials, are stored locally on your device (secrets in the iOS Keychain) and are sent directly to the respective cloud API to retrieve your data. The developer operates no server, uses no analytics or tracking, and does not collect or share personal data. You can remove the credentials at any time in the app settings.</p>
+    <p class="muted">SolarErtrag is an independent iOS and Android app that displays solar yield data. Your API token or account credentials for Growatt, Deye, Anker SOLIX, Zendure or EcoFlow are stored locally on your device (secrets in the iOS Keychain or Android Keystore) and are sent directly to the respective cloud API. The developer operates no server, uses no analytics or tracking, and does not collect or share personal data. You can remove the credentials at any time in the app settings.</p>
   </div>
 
   <a class="back" href="index.html">← Zurück</a>
-  <footer>© 2026 SolarErtrag · Nicht mit Growatt verbunden</footer>
+  <footer>© 2026 SolarErtrag · Nicht mit den Herstellern verbunden</footer>
 </div>
 </body>
 </html>
